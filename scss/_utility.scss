@@ -1,0 +1,103 @@
+// Colors used in the website as variables
+
+$primary-color: #323f68;
+$green: #62ab56;
+$gold:#caa645;
+$red: #c93833;
+$blue: #358cdf;
+
+$light-green: #73d162;
+$light-gold:#f7c744;
+$light-red: #ff4e48;
+$light-blue:rgb(52, 157, 255);
+
+$text-color:rgba(104, 101, 101,.7);
+
+
+$menu-opacity:.9;
+
+$footer-height:125px;
+
+
+// Website width for menu and overall text content
+
+$website-width: 1080px;
+
+// Global reset
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    font-family: 'Lato', sans-serif;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.container {
+
+    max-width: $website-width;
+    margin:0 auto;
+    // border: 1px dotted grey;
+}
+
+
+.mg-1{margin: 10px 0 ;}
+.mg-2{margin: 20px 0 ;}
+.mg-3{margin: 30px 0 ;}
+.mg-4{margin: 40px 0 ;}
+
+.pd-1{padding: 10px;}
+.pd-2{padding: 20px;}
+.pd-3{padding: 30px;}
+.pd-4{padding: 40px;}
+
+.underline{
+    height:1px;
+    width:100%;
+    background:$light-gold;
+    margin:0 0 1rem 0;
+}
+
+
+p {
+
+    font-size:1.1rem;
+    color:$text-color;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+h1, h2 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: $primary-color;
+
+}
+
+h1{
+    font-size:2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color:$text-color;
+    font-weight: 300;
+  }

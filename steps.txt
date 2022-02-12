@@ -1,0 +1,12 @@
+npm init -y  // Creates package.json
+
+
+npm install node-sass
+
+//NPM Script
+update test to ... "sass": "node-sass -w scss/ -o dist/css --recursive"
+
+
+
+npm run sass
+

@@ -1,0 +1,381 @@
+@import "utility";
+
+// First level menu with add logo and certification
+
+// Main logo and certification logo
+
+#nav-logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0.7rem 0;
+
+  div {
+    display: inline-block;
+  }
+
+  img.certification {
+    height: 57px;
+    width: auto;
+  }
+
+  .logo {
+    margin-top: 0.65rem;
+  }
+}
+
+// Second level menu - Main menu with buttons
+
+#mainmenu {
+  // height:70px;
+  background: $primary-color;
+
+  .menu {
+    // border:3px solid yellow;
+    display: flex;
+    justify-content: space-between;
+
+    .menu-about {
+
+      a {
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+
+      .products {
+        border-bottom: 7px solid $green;
+        margin-left: -3px;
+
+        &:hover {
+          background: $green;
+          opacity: $menu-opacity;
+          border-bottom: 7px solid $light-green;
+        }
+      }
+      .solutions {
+        border-bottom: 7px solid $gold;
+        margin-left: -3px;
+
+        &:hover {
+          background: $gold;
+          opacity: $menu-opacity;
+          border-bottom: 7px solid $light-gold;
+        }
+      }
+      .services {
+        border-bottom: 7px solid $red;
+        margin-left: -3px;
+
+        &:hover {
+          background: $red;
+          opacity: $menu-opacity;
+          border-bottom: 7px solid $light-red;
+        }
+      }
+
+      .services.current {
+        background: $red;
+        opacity: $menu-opacity;
+        border-bottom: 7px solid $light-red;
+      }
+
+      .solutions.current {
+        background: $gold;
+        opacity: $menu-opacity;
+        border-bottom: 7px solid $light-gold;
+      }
+
+      .products.current {
+        background: $green;
+        opacity: $menu-opacity;
+        border-bottom: 7px solid $light-green;
+      }
+    }
+
+    .menu-generic {
+
+        
+      a {
+        border-bottom: 7px solid transparent;
+        opacity: $menu-opacity;
+        padding:1rem 1rem;
+      }
+
+      a:hover,
+      a.current {
+        background: $blue;
+        border-bottom: 7px solid $light-blue;
+      }
+
+
+    }
+
+    ul {
+      display: inline-block;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin: 0;
+
+        a {
+          text-decoration: none;
+          color: white;
+          display: inline-block;
+          padding: 1rem 2rem;
+          border-bottom: 7px solid transparent;
+          margin: 0;
+        }
+      }
+    }
+  } //menu
+}
+
+// Footer Navigation Styling
+
+#nav-footer {
+   background: $primary-color;
+
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        font-size:.9rem;
+
+        a {
+          display: inline-block;
+          padding: 1rem .6rem .5rem 1rem;
+          font-weight: 600;
+        }
+
+        &:first-child {
+          a {
+            padding-left: 0;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .footer-menu {
+      display: flex;
+      justify-content: space-between;
+
+      ul:first-child {
+        text-transform: uppercase;
+
+        li::after {
+          content: "|";
+          color: white;
+        }
+
+        a:hover {
+          color: $light-gold;
+        }
+      }
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      opacity: 0.8;
+
+      p {
+        color: white;
+        font-size:.8rem;
+      }
+    }
+
+    &:first-child {
+      ul:first-child {
+        li:last-child {
+          &::after {
+            content: "";
+            background: red;
+          }
+        }
+      }
+    }
+
+    ul:last-child {
+      li:first-child {
+        &::after {
+          content: "|";
+          color: white;
+        }
+      }
+      a:hover {
+        color: $light-blue;
+      }
+    }
+  }
+}
+
+// Services Page
+
+.right {
+  .content {
+    padding: 3rem;
+    padding-right: 6rem;
+    padding-left: 5rem;
+  }
+}
+
+.left {
+  .content {
+    padding: 3rem;
+    padding-right: 4rem;
+    padding-left: 7rem;
+    align-items: flex-start;
+  }
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.item {
+  display: flex;
+  min-height: 200px;
+  max-height: 500px;
+  overflow: hidden;
+
+  div {
+    width: 50%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+        font-size:1.1rem;
+        color:$text-color;
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+
+    }
+
+    
+
+    li::before {
+      content: "    \2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: $primary-color;
+      display: inline-block;
+      width: 1.5rem;
+      margin-left: -1.5rem;
+    }
+  }
+}
+
+
+// Products Page
+
+.product{
+
+    height:100%;
+    overflow:hidden;
+
+    &-banner{
+        width:100%;
+        height:300px;
+        background-color: red;
+        background: url('/dist/images/puzzle.jpg') no-repeat center center/cover;
+    }
+
+    &-info {
+        padding:2rem;
+
+        h1 {
+            text-transform: uppercase;
+
+        }
+    }
+
+    &-flex{
+
+        margin-top:2rem;
+        display: grid;
+  
+        grid-template-columns: repeat(4, 1fr);
+        // grid-auto-flow: column dense;
+        
+        gap:.5rem;
+
+        &-item{
+
+
+            background: rgba(241, 241, 241,.5);
+            padding: 2rem;
+ 
+            &-thumbnail{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                width:200px;
+
+                img{
+                    width:85%;
+                    height:auto;
+                    object-fit: cover;
+                    box-shadow: 4px 4px 8px rgb(224, 224, 224);
+                }
+
+                p{
+                    text-align: center;
+                    font-size:.8rem;
+                    line-height:1.3;
+                    padding:1rem 0 .5rem 0;
+                }
+
+                a{
+                    width:60%;
+                    display:block;
+                    background: $green;
+                    height:2.5rem;
+                    text-align: center;
+                    line-height:2.5rem;
+                    border-radius: 6px;
+                    font-weight: 400;
+                    transform:scale(1);
+                    transition:all .3s ease-in-out;
+
+
+
+                    &:hover{
+                        transform:scale(1.05);
+                        background: $primary-color;
+
+                    }
+                    
+
+                }
+
+                
+
+            }
+
+           
+        }
+    }
+
+
+}
+
+
