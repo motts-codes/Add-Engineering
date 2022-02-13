@@ -13,6 +13,8 @@ $light-blue:rgb(52, 157, 255);
 
 $text-color:rgba(104, 101, 101,.7);
 
+$identiti: #CF9FFF;
+
 
 $menu-opacity:.9;
 
@@ -101,3 +103,20 @@ h2 {
     color:$text-color;
     font-weight: 300;
   }
+
+
+//   weblink identiti color
+
+
+a.identiti{
+    color:$identiti;
+
+    &:hover{
+        color:$light-gold;
+
+        &:hover::before{
+
+            content:'> ';
+        }
+    }
+}

@@ -71,6 +71,13 @@ h3 {
   color: rgba(104, 101, 101, 0.7);
   font-weight: 300; }
 
+a.identiti {
+  color: #CF9FFF; }
+  a.identiti:hover {
+    color: #f7c744; }
+    a.identiti:hover:hover::before {
+      content: '> '; }
+
 #nav-logo {
   display: flex;
   justify-content: space-between;
@@ -317,7 +324,7 @@ h3 {
       .contact-banner-form input[type="button"] {
         width: 20%;
         padding: .8rem 1rem .8rem 1rem;
-        background: #caa645;
+        background: #f7c744;
         font-size: 1rem;
         font-weight: 500;
         transform: scale(1);
@@ -330,3 +337,45 @@ h3 {
       .contact-banner-form h2 {
         text-align: right;
         padding-right: 2rem; }
+    .contact-banner-item {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      text-align: center;
+      padding-bottom: 3rem; }
+      .contact-banner-item .add-symbol {
+        position: absolute;
+        color: red;
+        font-size: 3rem;
+        font-weight: 600;
+        top: 15px;
+        left: -15px; }
+      .contact-banner-item-1, .contact-banner-item-2, .contact-banner-item-3 {
+        position: relative;
+        padding: 2rem;
+        border-radius: 15px; }
+      .contact-banner-item h3 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 800;
+        margin-bottom: 2rem; }
+      .contact-banner-item-1 {
+        border: 2px dotted #f7c744; }
+        .contact-banner-item-1 h3 {
+          color: #f7c744; }
+        .contact-banner-item-1 .add-symbol {
+          color: #f7c744; }
+      .contact-banner-item-2 {
+        border: 2px dotted #73d162; }
+        .contact-banner-item-2 h3 {
+          color: #73d162; }
+        .contact-banner-item-2 .add-symbol {
+          color: #62ab56; }
+      .contact-banner-item-3 {
+        border: 2px dotted #ff4e48; }
+        .contact-banner-item-3 h3 {
+          color: #ff4e48; }
+        .contact-banner-item-3 .add-symbol {
+          color: #ff4e48; }
+      .contact-banner-item p {
+        font-size: 1rem; }
