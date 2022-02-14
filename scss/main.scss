@@ -131,25 +131,61 @@
   } //menu
 }
 
-// Slide section
+// Slide section ----
 
 #gallery{
   // height:100%;
   
   .slides{
+    position: relative;
+    width:100%;
+    height:400px;
+
+    .slide-img{
+      position: absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      // display:none;
+      opacity:0;
+      transition:opacity 1s ease-in-out; 
+
+    }
+
+    .slide-img:first-child{
+      display:block;
+
+    }
+
+  
 
     .container{
      position:relative;
+    
+     #imageCaption{
+      position:absolute;
+      text-transform: capitalize;
+      padding:.5rem 1rem;
+      width:20rem;
+      background: $light-gold;
+      color:$primary-color;
+      text-align: center;
+      top:262px;
+      left:185px;
+      border-radius:0 0 15px 0; 
+      
+      
     }
-    width:100%;
 
     .numberone{
       position:absolute;
-      width:500px;
+      width:600px;
       height:auto;
-      top:-350px;
+      top:30px;
       left:0;
-      
+    }
     }
     img{
       height:400px;
@@ -264,6 +300,7 @@
 
 
 // Intro to Solutions section
+
 .intro-solutions{
   padding:4rem 2rem;
   margin-bottom:1rem;
@@ -320,18 +357,14 @@
     h4 {
 
       font-family: 'Syncopate', sans-serif;
-      font-size:1.5rem;
+      font-size:1.2rem;
       padding:.5rem 0rem;
-      border-bottom:2px solid;
       margin: 0 auto;
       border-radius: 3px;
-       margin-bottom:1rem;
     }
 
     
       
-
-  
  
     &.overview{
       border:none;
@@ -346,6 +379,7 @@
       p{color:white;}
 
       h4{
+        font-size:1.5rem;
         color:$light-gold;
       margin-bottom:2rem;}
       justify-self: center;
@@ -834,3 +868,4 @@
   }
 
 }
+

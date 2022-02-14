@@ -35,6 +35,33 @@ $footer-height:125px;
 
 
 
+// Border divs
+
+.borderline{
+     
+    margin: 0 auto;
+    margin-bottom:  0.8rem;
+    margin-top:.5rem;
+    width:50%;
+    height:2px;
+}
+
+.borderline.gold{
+  background: $light-gold;
+}
+.borderline.red{
+  background: $light-red;
+}
+.borderline.blue{
+  background: $light-blue;
+}
+.borderline.darkred{
+  background: $dark-red;
+}
+.borderline.grey{
+  background: $grey;
+}
+
 
 
 

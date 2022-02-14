@@ -17,6 +17,28 @@
 .darkred {
   color: #be2020; }
 
+.borderline {
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+  margin-top: .5rem;
+  width: 50%;
+  height: 2px; }
+
+.borderline.gold {
+  background: #f7c744; }
+
+.borderline.red {
+  background: #ff4e48; }
+
+.borderline.blue {
+  background: #349dff; }
+
+.borderline.darkred {
+  background: #be2020; }
+
+.borderline.grey {
+  background: #9f947c; }
+
 * {
   padding: 0;
   margin: 0;
@@ -184,15 +206,39 @@ a.identiti {
           margin: 0; }
 
 #gallery .slides {
-  width: 100%; }
+  position: relative;
+  width: 100%;
+  height: 400px; }
+  #gallery .slides .slide-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; }
+  #gallery .slides .slide-img:first-child {
+    display: block; }
   #gallery .slides .container {
     position: relative; }
-  #gallery .slides .numberone {
-    position: absolute;
-    width: 500px;
-    height: auto;
-    top: -350px;
-    left: 0; }
+    #gallery .slides .container #imageCaption {
+      position: absolute;
+      text-transform: capitalize;
+      padding: .5rem 1rem;
+      width: 20rem;
+      background: #f7c744;
+      color: #323f68;
+      text-align: center;
+      top: 262px;
+      left: 185px;
+      border-radius: 0 0 15px 0; }
+    #gallery .slides .container .numberone {
+      position: absolute;
+      width: 600px;
+      height: auto;
+      top: 30px;
+      left: 0; }
   #gallery .slides img {
     height: 400px;
     width: 100%;
@@ -297,12 +343,10 @@ a.identiti {
       margin-bottom: 1rem; }
     .intro-wrapper .intros h4 {
       font-family: 'Syncopate', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       padding: .5rem 0rem;
-      border-bottom: 2px solid;
       margin: 0 auto;
-      border-radius: 3px;
-      margin-bottom: 1rem; }
+      border-radius: 3px; }
     .intro-wrapper .intros.overview {
       border: none;
       background: #323f68;
@@ -315,6 +359,7 @@ a.identiti {
       .intro-wrapper .intros.overview p {
         color: white; }
       .intro-wrapper .intros.overview h4 {
+        font-size: 1.5rem;
         color: #f7c744;
         margin-bottom: 2rem; }
 
