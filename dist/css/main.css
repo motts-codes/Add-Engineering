@@ -1,3 +1,18 @@
+.red {
+  color: #c93833; }
+
+.gold {
+  color: #caa645; }
+
+.blue {
+  color: #358cdf; }
+
+.green {
+  color: #62ab56; }
+
+.grey {
+  color: #787d83; }
+
 * {
   padding: 0;
   margin: 0;
@@ -379,3 +394,56 @@ a.identiti {
           color: #ff4e48; }
       .contact-banner-item p {
         font-size: 1rem; }
+
+.logos-band {
+  margin-top: 1rem;
+  background: #f9f6e5;
+  padding: 1.5rem 0; }
+  .logos-band .logos {
+    display: flex; }
+    .logos-band .logos img {
+      width: 55%; }
+
+.solutions-wrapper {
+  width: 100%; }
+  .solutions-wrapper .solution {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; }
+    .solutions-wrapper .solution-image {
+      position: relative; }
+      .solutions-wrapper .solution-image .hero {
+        height: 40vh;
+        width: 100%;
+        object-fit: cover; }
+      .solutions-wrapper .solution-image .overlap {
+        position: absolute;
+        max-width: 700px;
+        top: 85%;
+        left: 20%; }
+    .solutions-wrapper .solution-content {
+      padding-bottom: 3rem; }
+      .solutions-wrapper .solution-content-items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        padding: 2rem 1rem 1rem 10rem; }
+        .solutions-wrapper .solution-content-items .icon {
+          display: flex;
+          padding-top: 1rem;
+          padding-bottom: .5rem;
+          color: #787d83;
+          font-size: 1rem;
+          line-height: 1.4; }
+          .solutions-wrapper .solution-content-items .icon img {
+            width: 25px;
+            color: #caa645;
+            padding-right: 5px; }
+        .solutions-wrapper .solution-content-items h1 {
+          font-size: 4rem;
+          letter-spacing: 5px; }
+        .solutions-wrapper .solution-content-items h3 {
+          font-weight: 100;
+          font-size: 2rem;
+          opacity: .6;
+          text-transform: uppercase; }

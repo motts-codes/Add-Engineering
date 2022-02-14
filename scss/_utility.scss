@@ -5,11 +5,14 @@ $green: #62ab56;
 $gold:#caa645;
 $red: #c93833;
 $blue: #358cdf;
+$grey: #787d83;
 
 $light-green: #73d162;
 $light-gold:#f7c744;
 $light-red: #ff4e48;
 $light-blue:rgb(52, 157, 255);
+
+$logo-back:#f9f6e5;
 
 $text-color:rgba(104, 101, 101,.7);
 
@@ -20,6 +23,11 @@ $menu-opacity:.9;
 
 $footer-height:125px;
 
+.red {color: $red;}
+.gold {color: $gold;}
+.blue {color: $blue;}
+.green {color: $green;}
+.grey {color: $grey;}
 
 // Website width for menu and overall text content
 
@@ -120,3 +128,4 @@ a.identiti{
         }
     }
 }
+
