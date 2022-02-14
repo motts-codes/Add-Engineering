@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@400;600&family=Syncopate:wght@400;700&display=swap");
 .red {
   color: #c93833; }
 
@@ -11,7 +12,10 @@
   color: #62ab56; }
 
 .grey {
-  color: #787d83; }
+  color: #9f947c; }
+
+.darkred {
+  color: #be2020; }
 
 * {
   padding: 0;
@@ -93,6 +97,17 @@ a.identiti {
     a.identiti:hover:hover::before {
       content: '> '; }
 
+.logos-band {
+  background: #f9f6e5;
+  padding: 1.5rem 0; }
+  .logos-band .logos {
+    display: flex; }
+    .logos-band .logos img {
+      width: 55%; }
+
+.highlight {
+  color: #caa645; }
+
 #nav-logo {
   display: flex;
   justify-content: space-between;
@@ -167,6 +182,141 @@ a.identiti {
           padding: 1rem 2rem;
           border-bottom: 7px solid transparent;
           margin: 0; }
+
+#gallery .slides {
+  width: 100%; }
+  #gallery .slides .container {
+    position: relative; }
+  #gallery .slides .numberone {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: -350px;
+    left: 0; }
+  #gallery .slides img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover; }
+
+.section-wrapper {
+  margin-top: 4rem;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 0; }
+  .section-wrapper .image {
+    height: 100%;
+    width: 40%;
+    align-self: start; }
+    .section-wrapper .image img {
+      width: 90%;
+      height: auto; }
+  .section-wrapper .text {
+    width: 80%;
+    padding: 0 3rem 2rem 3rem; }
+    .section-wrapper .text h2 {
+      font-size: 1.5rem;
+      text-transform: capitalize; }
+
+.advantage {
+  background: url("../images/homepage/banner_cover.jpg") no-repeat center center/cover;
+  padding: 3rem; }
+  .advantage .icons-wrapper {
+    display: flex;
+    margin-left: 3rem; }
+    .advantage .icons-wrapper-text {
+      width: 25%;
+      text-align: right;
+      align-self: center; }
+      .advantage .icons-wrapper-text h2 {
+        font-size: 1.7rem; }
+    .advantage .icons-wrapper-icons {
+      margin-left: 1rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      .advantage .icons-wrapper-icons i {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        color: #caa645;
+        text-align: center;
+        margin-left: -35px; }
+      .advantage .icons-wrapper-icons h4 {
+        font-size: 1.1rem;
+        color: rgba(104, 101, 101, 0.7);
+        text-align: center;
+        width: 80%;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 400; }
+
+.intro-solutions {
+  padding: 4rem 2rem;
+  margin-bottom: 1rem; }
+
+.intro-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  grid-auto-flow: dense;
+  margin-top: 1.5rem; }
+  .intro-wrapper .intros {
+    padding: 1rem 2rem 2rem 2rem;
+    border-width: 0px;
+    border-style: dotted;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(238, 235, 219, 0.5); }
+    .intro-wrapper .intros a {
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+      text-align: center;
+      width: 60%;
+      display: inline-block;
+      background: #62ab56;
+      height: 2.5rem;
+      text-align: center;
+      line-height: 2.5rem;
+      border-radius: 6px;
+      font-weight: 400;
+      transition: all .3s ease-in-out; }
+      .intro-wrapper .intros a:hover {
+        background: #323f68; }
+    .intro-wrapper .intros img {
+      width: 200px;
+      margin-bottom: 1rem; }
+    .intro-wrapper .intros h4 {
+      font-family: 'Syncopate', sans-serif;
+      font-size: 1.5rem;
+      padding: .5rem 0rem;
+      border-bottom: 2px solid;
+      margin: 0 auto;
+      border-radius: 3px;
+      margin-bottom: 1rem; }
+    .intro-wrapper .intros.overview {
+      border: none;
+      background: #323f68;
+      justify-self: center;
+      align-self: stretch; }
+      .intro-wrapper .intros.overview i {
+        padding-top: 6rem;
+        color: #f7c744;
+        margin-bottom: 1rem; }
+      .intro-wrapper .intros.overview p {
+        color: white; }
+      .intro-wrapper .intros.overview h4 {
+        color: #f7c744;
+        margin-bottom: 2rem; }
 
 #nav-footer {
   background: #323f68; }
@@ -395,15 +545,6 @@ a.identiti {
       .contact-banner-item p {
         font-size: 1rem; }
 
-.logos-band {
-  margin-top: 1rem;
-  background: #f9f6e5;
-  padding: 1.5rem 0; }
-  .logos-band .logos {
-    display: flex; }
-    .logos-band .logos img {
-      width: 55%; }
-
 .solutions-wrapper {
   width: 100%; }
   .solutions-wrapper .solution {
@@ -413,7 +554,7 @@ a.identiti {
     .solutions-wrapper .solution-image {
       position: relative; }
       .solutions-wrapper .solution-image .hero {
-        height: 40vh;
+        height: 45vh;
         width: 100%;
         object-fit: cover; }
       .solutions-wrapper .solution-image .overlap {
@@ -432,7 +573,7 @@ a.identiti {
           display: flex;
           padding-top: 1rem;
           padding-bottom: .5rem;
-          color: #787d83;
+          color: #9f947c;
           font-size: 1rem;
           line-height: 1.4; }
           .solutions-wrapper .solution-content-items .icon img {
@@ -440,10 +581,13 @@ a.identiti {
             color: #caa645;
             padding-right: 5px; }
         .solutions-wrapper .solution-content-items h1 {
-          font-size: 4rem;
-          letter-spacing: 5px; }
+          font-family: 'Syncopate', sans-serif;
+          font-size: 3.2rem;
+          letter-spacing: 2px; }
         .solutions-wrapper .solution-content-items h3 {
           font-weight: 100;
           font-size: 2rem;
-          opacity: .6;
+          opacity: .8;
           text-transform: uppercase; }
+        .solutions-wrapper .solution-content-items p {
+          width: 80%; }

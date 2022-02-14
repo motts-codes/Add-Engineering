@@ -1,11 +1,14 @@
 // Colors used in the website as variables
 
+
 $primary-color: #323f68;
 $green: #62ab56;
 $gold:#caa645;
 $red: #c93833;
 $blue: #358cdf;
-$grey: #787d83;
+$grey: #9f947c;
+
+$dark-red: #be2020;
 
 $light-green: #73d162;
 $light-gold:#f7c744;
@@ -28,6 +31,14 @@ $footer-height:125px;
 .blue {color: $blue;}
 .green {color: $green;}
 .grey {color: $grey;}
+.darkred {color: $dark-red;}
+
+
+
+
+
+
+
 
 // Website width for menu and overall text content
 
@@ -129,3 +140,27 @@ a.identiti{
     }
 }
 
+
+
+// Logos Band
+
+.logos-band{
+    background:$logo-back;
+    // height:125px;
+    padding:1.5rem 0 ;
+  
+    .logos{
+      display:flex;
+  
+      img{
+        width:55%;
+      }
+  
+  
+    }
+  
+  }
+
+  .highlight{
+      color:$gold;
+  }
