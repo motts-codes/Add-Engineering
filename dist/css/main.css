@@ -630,7 +630,8 @@ a.identiti {
         .solutions-wrapper .solution-content-items h1 {
           font-family: 'Syncopate', sans-serif;
           font-size: 3.2rem;
-          letter-spacing: 2px; }
+          letter-spacing: 2px;
+          margin-top: 1.5rem; }
         .solutions-wrapper .solution-content-items h3 {
           font-weight: 100;
           font-size: 2rem;
