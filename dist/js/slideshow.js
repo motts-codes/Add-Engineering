@@ -26,10 +26,13 @@ setInterval(nextImage, slideDelay);
 
 function nextImage(){
     // slideImages[imageCounter].style.display= 'none';
+    imageCaption.style.opacity = 0;
+
     slideImages[imageCounter].style.opacity= 0;
 
     imageCounter = (imageCounter +1 ) % slideImages.length;
     // slideImages[imageCounter].style.display= 'block';
+    imageCaption.style.opacity = 1;
     slideImages[imageCounter].style.opacity= 1;
     console.log(imageCounter);
     imageCaption.innerHTML = captions[imageCounter];
