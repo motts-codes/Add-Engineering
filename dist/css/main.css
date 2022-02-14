@@ -138,9 +138,11 @@ a.identiti {
     display: inline-block; }
   #nav-logo img.certification {
     height: 57px;
-    width: auto; }
+    width: auto;
+    margin-right: 1rem; }
   #nav-logo .logo {
-    margin-top: 0.65rem; }
+    margin-top: 0.65rem;
+    margin-left: 1rem; }
 
 #mainmenu {
   background: #323f68; }
