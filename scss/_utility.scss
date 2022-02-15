@@ -1,5 +1,31 @@
 // Colors used in the website as variables
 
+// Global reset
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    font-family: 'Lato', sans-serif;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+h1,h2{
+    line-height:1.3;
+    margin-bottom:.5rem;
+}
 
 $primary-color: #323f68;
 $green: #62ab56;
@@ -17,7 +43,7 @@ $light-blue:rgb(52, 157, 255);
 
 $logo-back:#f9f6e5;
 
-$text-color:rgba(104, 101, 101,.7);
+$text-color:rgba(104, 101, 101,.9);
 
 $identiti: #CF9FFF;
 
@@ -25,6 +51,11 @@ $identiti: #CF9FFF;
 $menu-opacity:.9;
 
 $footer-height:125px;
+
+// Website width for menu and overall text content
+
+$website-width: 1080px;
+
 
 .red {color: $red;}
 .gold {color: $gold;}
@@ -67,31 +98,7 @@ $footer-height:125px;
 
 
 
-// Website width for menu and overall text content
 
-$website-width: 1080px;
-
-// Global reset
-
-* {
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-
-body{
-
-    font-family: 'Lato', sans-serif;
-}
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color:white;
-}
 
 .container {
 

@@ -1,3 +1,4 @@
+@import 'reset';
 @import "utility";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@400;600&family=Syncopate:wght@400;700&display=swap');
 
@@ -17,12 +18,10 @@
   img.certification {
     height: 57px;
     width: auto;
-    margin-right:1rem;
   }
 
   .logo {
     margin-top: 0.65rem;
-    margin-left:1rem;
   }
 }
 
@@ -874,3 +873,6 @@
 
 }
 
+
+
+@import 'mobile';
