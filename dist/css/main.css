@@ -319,41 +319,45 @@ a.identiti {
       font-size: 1.5rem;
       text-transform: capitalize; }
 
-.advantage {
+.advantage .container {
+  border-radius: 10px;
   background: url("../images/homepage/banner_cover.jpg") no-repeat center center/cover;
-  padding: 3rem; }
-  .advantage .icons-wrapper {
-    display: flex;
-    margin-left: 3rem; }
-    .advantage .icons-wrapper-text {
-      width: 25%;
-      text-align: right;
-      align-self: center; }
-      .advantage .icons-wrapper-text h2 {
-        font-size: 1.7rem; }
-    .advantage .icons-wrapper-icons {
-      margin-left: 1rem;
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(3, 1fr);
+  padding: 1rem 3rem;
+  border: 1px solid #f7c744; }
+
+.advantage .icons-wrapper {
+  display: flex;
+  flex-direction: column; }
+  .advantage .icons-wrapper div div:nth-child(4) .borderline, .advantage .icons-wrapper div div:nth-child(5) .borderline, .advantage .icons-wrapper div div:nth-child(6) .borderline {
+    background-color: transparent; }
+  .advantage .icons-wrapper-text {
+    text-align: center;
+    align-self: center; }
+    .advantage .icons-wrapper-text h2 {
+      font-size: 1.7rem;
+      margin: 2rem 0 2rem 0; }
+  .advantage .icons-wrapper-icons {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .advantage .icons-wrapper-icons i {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      color: #f7c744;
+      text-align: center; }
+    .advantage .icons-wrapper-icons h4 {
+      font-size: 1.1rem;
+      color: rgba(104, 101, 101, 0.9);
       text-align: center;
-      justify-content: center;
-      align-items: center;
-      align-content: center; }
-      .advantage .icons-wrapper-icons i {
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
-        color: #caa645;
-        text-align: center;
-        margin-left: -35px; }
-      .advantage .icons-wrapper-icons h4 {
-        font-size: 1.1rem;
-        color: rgba(104, 101, 101, 0.9);
-        text-align: center;
-        width: 80%;
-        padding-bottom: 1rem;
-        text-transform: uppercase;
-        font-weight: 400; }
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 1.2; }
 
 .intro-solutions {
   padding: 4rem 2rem;
@@ -694,7 +698,7 @@ a.identiti {
           width: 80%; }
 
 @media (max-width: 1100px) {
-  .logo {
+  #nav-logo .logo {
     margin-left: 1rem; }
-  img.certification {
+  #nav-logo img.certification {
     margin-right: 1rem; } }
