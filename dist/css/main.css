@@ -321,6 +321,8 @@ a.identiti {
       font-size: 1.5rem;
       width: 80%;
       text-transform: capitalize; }
+    .section-wrapper .text p {
+      width: 90%; }
 
 .advantage .container {
   border-radius: 10px;
