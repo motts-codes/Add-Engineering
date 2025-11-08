@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@400;600&display=swap"
       rel="stylesheet"
     /> -->
+  <script src="https://kit.fontawesome.com/5af07cc26e.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/main.css" />
   <title>
     Add Engineering - Single Source Supplier of High-tech Cutting tools for
@@ -21,6 +23,7 @@
 <body>
   <!-- MAIN HEADER with menu navigation -->
 
+  <!-- MAIN HEADER with menu navigation -->
   <header id="navigation">
     <div class="container">
       <nav id="nav-logo">
@@ -30,6 +33,13 @@
         <div>
           <img class="certification" src="images/certification.png" alt="We are a iso 9001:2008 certified company" />
         </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
 
@@ -42,13 +52,17 @@
             <li><a class="services" href="services.html">Services</a></li>
           </ul>
           <ul class="menu-generic">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="current" href="contact_us.html">Contact Us</a></li>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
     </section>
   </header>
+
+  <!-- Overlay for mobile menu -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
 
   <!-- Section Image -->
 
@@ -161,6 +175,54 @@
       </div>
     </div>
   </footer>
+  <script>
+    // Mobile Menu Toggle Functionality
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mainMenu = document.getElementById('mainmenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const body = document.body;
+
+    // Toggle menu
+    mobileMenuToggle.addEventListener('click', function () {
+      this.classList.toggle('active');
+      mainMenu.classList.toggle('active');
+      menuOverlay.classList.toggle('active');
+      body.style.overflow = mainMenu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking overlay
+    menuOverlay.addEventListener('click', function () {
+      mobileMenuToggle.classList.remove('active');
+      mainMenu.classList.remove('active');
+      menuOverlay.classList.remove('active');
+      body.style.overflow = '';
+    });
+
+    // Close menu when clicking menu item
+    const menuLinks = document.querySelectorAll('#mainmenu a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        mobileMenuToggle.classList.remove('active');
+        mainMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        body.style.overflow = '';
+      });
+    });
+
+    // Close menu on window resize if viewport becomes larger
+    let resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        if (window.innerWidth > 768) {
+          mobileMenuToggle.classList.remove('active');
+          mainMenu.classList.remove('active');
+          menuOverlay.classList.remove('active');
+          body.style.overflow = '';
+        }
+      }, 250);
+    });
+  </script>
 </body>
 
 </html>

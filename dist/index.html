@@ -21,8 +21,6 @@
 
 <body>
   <!-- MAIN HEADER with menu navigation -->
-
-  <!-- MAIN HEADER with menu navigation -->
   <header id="navigation">
     <div class="container">
       <nav id="nav-logo">
@@ -32,7 +30,7 @@
         <div>
           <img class="certification" src="images/certification.png" alt="We are a iso 9001:2008 certified company" />
         </div>
-        
+
         <!-- Mobile Menu Toggle Button -->
         <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
           <span></span>
@@ -315,7 +313,7 @@
       </div>
     </div>
   </footer>
-   <script>
+  <script>
     // Mobile Menu Toggle Functionality
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const mainMenu = document.getElementById('mainmenu');
@@ -323,7 +321,7 @@
     const body = document.body;
 
     // Toggle menu
-    mobileMenuToggle.addEventListener('click', function() {
+    mobileMenuToggle.addEventListener('click', function () {
       this.classList.toggle('active');
       mainMenu.classList.toggle('active');
       menuOverlay.classList.toggle('active');
@@ -331,7 +329,7 @@
     });
 
     // Close menu when clicking overlay
-    menuOverlay.addEventListener('click', function() {
+    menuOverlay.addEventListener('click', function () {
       mobileMenuToggle.classList.remove('active');
       mainMenu.classList.remove('active');
       menuOverlay.classList.remove('active');
@@ -341,7 +339,7 @@
     // Close menu when clicking menu item
     const menuLinks = document.querySelectorAll('#mainmenu a');
     menuLinks.forEach(link => {
-      link.addEventListener('click', function() {
+      link.addEventListener('click', function () {
         mobileMenuToggle.classList.remove('active');
         mainMenu.classList.remove('active');
         menuOverlay.classList.remove('active');
@@ -351,9 +349,9 @@
 
     // Close menu on window resize if viewport becomes larger
     let resizeTimer;
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function() {
+      resizeTimer = setTimeout(function () {
         if (window.innerWidth > 768) {
           mobileMenuToggle.classList.remove('active');
           mainMenu.classList.remove('active');
