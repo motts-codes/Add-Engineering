@@ -1,243 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <title>
-        Add Engineering - Your Single Source Supplier of High-tech Cutting tools for
-        Machining
-      </title>
-      
-    <script
-      src="https://kit.fontawesome.com/5af07cc26e.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="js/slideshow.js" defer></script>
+  <title>
+    Add Engineering - Your Single Source Supplier of High-tech Cutting tools for
+    Machining
+  </title>
 
-    <link rel="stylesheet" href="css/main.css" />
+  <script src="https://kit.fontawesome.com/5af07cc26e.js" crossorigin="anonymous"></script>
 
-  </head>
-  <body>
-    <!-- MAIN HEADER with menu navigation -->
+  <script src="js/slideshow.js" defer></script>
 
-    <header id="navigation">
-      <div class="container">
-        <nav id="nav-logo">
-          <div>
-            <a href="index.html"
-              ><img
-                class="logo"
-                src="images/add-logo.png"
-                alt="Add Engineering Logo"
-            /></a>
-          </div>
-          <div>
-            <img
-              class="certification"
-              src="images/certification.png"
-              alt="We are a iso 9001:2008 certified company"
-            />
-          </div>
-        </nav>
-      </div>
+  <link rel="stylesheet" href="css/main.css" />
 
-      <section id="mainmenu">
-        <div class="container">
-          <div class="menu">
-            <ul class="menu-about">
-              <li><a class="products" href="products.html">Products</a></li>
-              <li><a class="solutions" href="solutions.html">Solutions</a></li>
-              <li><a class="services" href="services.html">Services</a></li>
-            </ul>
-            <ul class="menu-generic">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-          </div>
+</head>
+
+<body>
+  <!-- MAIN HEADER with menu navigation -->
+
+  <!-- MAIN HEADER with menu navigation -->
+  <header id="navigation">
+    <div class="container">
+      <nav id="nav-logo">
+        <div>
+          <a href="index.html"><img class="logo" src="images/add-logo.png" alt="Add Engineering Logo" /></a>
         </div>
-      </section>
-    </header>
+        <div>
+          <img class="certification" src="images/certification.png" alt="We are a iso 9001:2008 certified company" />
+        </div>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
 
-    <!-- Slide Show Section -->
+    <section id="mainmenu">
+      <div class="container">
+        <div class="menu">
+          <ul class="menu-about">
+            <li><a class="products" href="products.html">Products</a></li>
+            <li><a class="solutions" href="solutions.html">Solutions</a></li>
+            <li><a class="services" href="services.html">Services</a></li>
+          </ul>
+          <ul class="menu-generic">
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </header>
 
-    <section id="gallery">
-      <div class="slides">
-        <img class = "slide-img" src="images/homepage/slideshow/slide1.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide2.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide3.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide4.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide5.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide6.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide7.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide8.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide9.jpg" alt="" />
-        <img class = "slide-img" src="images/homepage/slideshow/slide10.jpg" alt="" />
-        <div class="container">
-          <div class="numberone-wrapper">
+  <!-- Overlay for mobile menu -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+
+  <!-- Slide Show Section -->
+
+  <section id="gallery">
+    <div class="slides">
+      <img class="slide-img" src="images/homepage/slideshow/slide1.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide2.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide3.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide4.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide5.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide6.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide7.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide8.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide9.jpg" alt="" />
+      <img class="slide-img" src="images/homepage/slideshow/slide10.jpg" alt="" />
+      <div class="container">
+        <div class="numberone-wrapper">
           <img class="numberone" src="images/homepage/numberone.png" alt="" />
           <h4 id="imageCaption">imageTitle</h4>
         </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Main Home Page Content -->
+
+  <section id="section-content">
+    <div class="container">
+      <div class="section-wrapper">
+        <div class="image">
+          <img src="images/homepage/join_hands.jpg" alt="" />
+        </div>
+
+        <div class="text">
+          <h2>
+            Join hands with the
+            <span class="highlight">#1 Single Source Supplier</span> of
+            High-Tech Cutting Tools for machining.
+          </h2>
+          <p>
+            At ADD Engineering, we understand our customers’ needs for
+            continuous optimization of key processes to maximize the
+            productivity. With our experience, expertise and know-how in the
+            machining industry, we stand support in providing apt solutions
+            from a single source.
+          </p>
+          <br />
+
+          <p>
+            At ADD Engineering we believe in partnership synergies and in
+            long-term working relationship. With our professional team across
+            the globe you get the best in project solution, quality control
+            and statistical process control (SPC) with technology and systems
+            from Germany, and support from ADD India.
+          </p>
         </div>
       </div>
-   
-    </section>
+    </div>
+  </section>
 
-    <!-- Main Home Page Content -->
+  <!-- Section - Add Advantage Icons -->
 
-    <section id="section-content">
-      <div class="container">
-        <div class="section-wrapper">
-          <div class="image">
-            <img src="images/homepage/join_hands.jpg" alt="" />
-          </div>
-
-          <div class="text">
-            <h2>
-              Join hands with the
-              <span class="highlight">#1 Single Source Supplier</span> of
-              High-Tech Cutting Tools for machining.
-            </h2>
-            <p>
-              At ADD Engineering, we understand our customers’ needs for
-              continuous optimization of key processes to maximize the
-              productivity. With our experience, expertise and know-how in the
-              machining industry, we stand support in providing apt solutions
-              from a single source.
-            </p>
-            <br />
-
-            <p>
-              At ADD Engineering we believe in partnership synergies and in
-              long-term working relationship. With our professional team across
-              the globe you get the best in project solution, quality control
-              and statistical process control (SPC) with technology and systems
-              from Germany, and support from ADD India.
-            </p>
-          </div>
+  <section class="advantage">
+    <div class="container">
+      <div class="icons-wrapper">
+        <div class="icons-wrapper-text">
+          <h2>
+            Precision cutting tools for your high-tech needs
+          </h2>
         </div>
-      </div>
-    </section>
 
-    <!-- Section - Add Advantage Icons -->
-
-    <section class="advantage">
-      <div class="container">
-        <div class="icons-wrapper">
-          <div class="icons-wrapper-text">
-            <h2>
-              Precision cutting tools for your high-tech needs
-            </h2>
+        <div class="icons-wrapper-icons">
+          <div>
+            <i class="fas fa-solid fa-thumbs-up"></i>
+            <h4>Exceptional <br>Performance</h4>
+            <div class="borderline gold"></div>
           </div>
-
-          <div class="icons-wrapper-icons">
-            <div>
-              <i class="fas fa-solid fa-thumbs-up"></i>
-              <h4>Exceptional <br>Performance</h4>
-              <div class="borderline gold"></div>
-            </div>
-            <div>
-              <i class="fas fa-solid fa-signal"></i>
-              <h4>High Productivity <br>& Tool Life</h4>
-              <div class="borderline gold"></div>
-
-            </div>
-            <div>
-              <i class="fas fa-solid fa-users"></i>
-              <h4>Global <br />Support</h4>
-              <div class="borderline gold"></div>
-
-            </div>
-            <div>
-              <i class="fas fa-solid fa-star"></i>
-              <h4>Rigid Quality <br>Standards</h4>
-              <div class="borderline gold"></div>
-
-            </div>
-            <div>
-              <i class="fas fa-solid fa-truck"></i>
-              <h4>Strong Global<br> Distribution</h4>
-              <div class="borderline gold"></div>
-
-            </div>
-            <div>
-              <i class="fas fa-solid fa-flag"></i>
-              <h4>High Quality <br>Raw Materials</h4>
-              <div class="borderline gold"></div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section - Intro to Solutions -->
-
-    <div class="intro-solutions">
-      <div class="container">
-        <div class="intro-wrapper">
-           
-          <div class="intros gold">
-            <img src="images/homepage/aero.png" alt="" />
-            <h4 class="bordergold">AEROSPACE</h4>
+          <div>
+            <i class="fas fa-solid fa-signal"></i>
+            <h4>High Productivity <br>& Tool Life</h4>
             <div class="borderline gold"></div>
 
-            <p>
-              We provide cost reduction methods to produce high quality & precise tolerance in Aerospace
-              components
-            </p>
-            <a href="solutions.html#aerospace" target ="_blank">Know more</a>
+          </div>
+          <div>
+            <i class="fas fa-solid fa-users"></i>
+            <h4>Global <br />Support</h4>
+            <div class="borderline gold"></div>
 
           </div>
-          <div class="intros red">
-            <img src="images/homepage/auto.png" alt="" />
-            <h4>AUTOMOTIVES</h4>
-            <div class="borderline red"></div>
-
-            <p>
-              Our high-tech tools backed by our automotive industry expertise provide the machining solutions for complete machining</p>
-            <a href="solutions.html#automotive" target ="_blank">Know more</a>
-
+          <div>
+            <i class="fas fa-solid fa-star"></i>
+            <h4>Rigid Quality <br>Standards</h4>
+            <div class="borderline gold"></div>
 
           </div>
-          <div class="intros blue">
-            <img src="images/homepage/energy.png" alt="" />
-            <h4>ENERGY</h4>
-            <div class="borderline blue"></div>
-
-
-            <p>
-              We offer the most comprehensive range of metal cutting tools for metal and composite materials with tight tolerances & finish</p>
-            <a href="solutions.html#energy" target ="_blank">Know more</a>
+          <div>
+            <i class="fas fa-solid fa-truck"></i>
+            <h4>Strong Global<br> Distribution</h4>
+            <div class="borderline gold"></div>
 
           </div>
-          <div class="intros darkred">
-            <img src="images/homepage/rail.png" alt="" />
-            <h4>RAILWAY</h4>
-            <div class="borderline darkred"></div>
-
-            <p>
-              We deliver cost-effective complete solutions for all machining requirements in the railway infrastructure 
-            </p>
-            <a href="solutions.html#railway" target ="_blank">Know more</a>
+          <div>
+            <i class="fas fa-solid fa-flag"></i>
+            <h4>High Quality <br>Raw Materials</h4>
+            <div class="borderline gold"></div>
 
           </div>
-          <div class="intros grey">
-            <img src="images/homepage/special.png" alt="" />
-            <h4>SOLUTIONS</h4>
-            <div class="borderline grey"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <p>
-              We are continuously developing cost-effective special solutions in general engineering, mould making & more
-            </p>
-            <a href="solutions.html#special" target ="_blank">Know more</a>
+  <!-- Section - Intro to Solutions -->
 
-          </div>
+  <div class="intro-solutions">
+    <div class="container">
+      <div class="intro-wrapper">
 
-          <div class="intros overview">
-            <div class="overview-wrapper">
+        <div class="intros gold">
+          <img src="images/homepage/aero.png" alt="" />
+          <h4 class="bordergold">AEROSPACE</h4>
+          <div class="borderline gold"></div>
+
+          <p>
+            We provide cost reduction methods to produce high quality & precise tolerance in Aerospace
+            components
+          </p>
+          <a href="solutions.html#aerospace" target="_blank">Know more</a>
+
+        </div>
+        <div class="intros red">
+          <img src="images/homepage/auto.png" alt="" />
+          <h4>AUTOMOTIVES</h4>
+          <div class="borderline red"></div>
+
+          <p>
+            Our high-tech tools backed by our automotive industry expertise provide the machining solutions for complete
+            machining</p>
+          <a href="solutions.html#automotive" target="_blank">Know more</a>
+
+
+        </div>
+        <div class="intros blue">
+          <img src="images/homepage/energy.png" alt="" />
+          <h4>ENERGY</h4>
+          <div class="borderline blue"></div>
+
+
+          <p>
+            We offer the most comprehensive range of metal cutting tools for metal and composite materials with tight
+            tolerances & finish</p>
+          <a href="solutions.html#energy" target="_blank">Know more</a>
+
+        </div>
+        <div class="intros darkred">
+          <img src="images/homepage/rail.png" alt="" />
+          <h4>RAILWAY</h4>
+          <div class="borderline darkred"></div>
+
+          <p>
+            We deliver cost-effective complete solutions for all machining requirements in the railway infrastructure
+          </p>
+          <a href="solutions.html#railway" target="_blank">Know more</a>
+
+        </div>
+        <div class="intros grey">
+          <img src="images/homepage/special.png" alt="" />
+          <h4>SOLUTIONS</h4>
+          <div class="borderline grey"></div>
+
+          <p>
+            We are continuously developing cost-effective special solutions in general engineering, mould making & more
+          </p>
+          <a href="solutions.html#special" target="_blank">Know more</a>
+
+        </div>
+
+        <div class="intros overview">
+          <div class="overview-wrapper">
 
             <i class="fas fa-solid fa-comments fa-3x"></i>
             <h4>Talk to our experts!</h4>
@@ -247,58 +251,118 @@
             </p>
           </div>
         </div>
-        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Logos band -->
+  <!-- Logos band -->
 
-    <section class="logos-band">
-      <div class="container">
-        <div class="logos">
+  <section class="logos-band">
+    <div class="container">
+      <div class="logos-slider">
+        <div class="logos-track">
           <img src="images/logos/logos_01.png" alt="drdo client" />
           <img src="images/logos/logos_02.png" alt="hal client" />
           <img src="images/logos/logos_03.png" alt="bosch client" />
           <img src="images/logos/logos_04.png" alt="jsw client" />
           <img src="images/logos/logos_05.png" alt="bfw client" />
           <img src="images/logos/logos_06.png" alt="beml client" />
-          <img src="images/logos/logos_07.png" alt="" />
-          <img src="images/logos/logos_08.png" alt="" />
+          <img src="images/logos/logos_07.png" alt="client logo" />
+          <img src="images/logos/logos_08.png" alt="client logo" />
+
+          <!-- duplicate logos for smooth infinite loop -->
+          <img src="images/logos/logos_01.png" alt="drdo client" />
+          <img src="images/logos/logos_02.png" alt="hal client" />
+          <img src="images/logos/logos_03.png" alt="bosch client" />
+          <img src="images/logos/logos_04.png" alt="jsw client" />
+          <img src="images/logos/logos_05.png" alt="bfw client" />
+          <img src="images/logos/logos_06.png" alt="beml client" />
+          <img src="images/logos/logos_07.png" alt="client logo" />
+          <img src="images/logos/logos_08.png" alt="client logo" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER for all pages -->
 
-    <footer id="nav-footer" class="pd-3">
-      <div class="container">
-        <div class="footer-items">
-          <div class="logo">
-            <img src="images/add-logo-white.png" alt="Add Engineering Logo" />
-          </div>
-          <div class="footer-menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="solutions.html">Solutions</a></li>
-              <li><a href="services.html">Services</a></li>
-            </ul>
+  <!-- FOOTER for all pages -->
 
-            <ul>
-              <li><a href="products.html">Downloads</a></li>
-              <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="underline"></div>
+  <footer id="nav-footer" class="pd-3">
+    <div class="container">
+      <div class="footer-items">
+        <div class="logo">
+          <img src="images/add-logo-white.png" alt="Add Engineering Logo" />
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
 
-          <div class="copyright">
-            <p>&copy; 2023. Copyright. ADD Engineering. All rights reserved.</p>
-            <a class="identiti" href="http://www.identitidesign.com"
-              >Webpresence - identitidesign</a
-            >
-          </div>
+          <ul>
+            <li><a href="products.html">Downloads</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="underline"></div>
+
+        <div class="copyright">
+          <p>&copy; 2023. Copyright. ADD Engineering. All rights reserved.</p>
+          <a class="identiti" href="http://www.identitidesign.com">Webpresence - identitidesign</a>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+   <script>
+    // Mobile Menu Toggle Functionality
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mainMenu = document.getElementById('mainmenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const body = document.body;
+
+    // Toggle menu
+    mobileMenuToggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mainMenu.classList.toggle('active');
+      menuOverlay.classList.toggle('active');
+      body.style.overflow = mainMenu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking overlay
+    menuOverlay.addEventListener('click', function() {
+      mobileMenuToggle.classList.remove('active');
+      mainMenu.classList.remove('active');
+      menuOverlay.classList.remove('active');
+      body.style.overflow = '';
+    });
+
+    // Close menu when clicking menu item
+    const menuLinks = document.querySelectorAll('#mainmenu a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenuToggle.classList.remove('active');
+        mainMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        body.style.overflow = '';
+      });
+    });
+
+    // Close menu on window resize if viewport becomes larger
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        if (window.innerWidth > 768) {
+          mobileMenuToggle.classList.remove('active');
+          mainMenu.classList.remove('active');
+          menuOverlay.classList.remove('active');
+          body.style.overflow = '';
+        }
+      }, 250);
+    });
+  </script>
+</body>
+
 </html>
